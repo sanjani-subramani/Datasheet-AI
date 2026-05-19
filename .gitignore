@@ -7,3 +7,6 @@ __pycache__/
 
 # VS Code settings
 .vscode/
+
+# Layer 2 output files
+Layer_2/extracted_specs.json
