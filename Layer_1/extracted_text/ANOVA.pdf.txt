@@ -1,0 +1,274 @@
+--- Page 1 ---
+Completely randomised design (CRD)
+• To compare ‘h’ treatments 
+• The plots are numbered from 1 to n serially.
+• Randomly selecting samples and give the 
+treatment.
+
+--- Page 2 ---
+Randomized Block Design (RBD)
+Two way classification
+• To test the effect of k fertilizing treatments on the 
+yield of a crop
+• Divide the plots in h blocks, each block containing 
+k plots
+• Within each block, the k treatments are given to 
+the k plots in a perfectly random manner, such 
+that each treatment occurs only once in any 
+block.
+• But the same k treatments are repeated from 
+block to block.
+
+--- Page 3 ---
+Analysis of variance (ANOVA)
+VARIATION SUM OF 
+SQUARES
+DEGREE OF 
+FREEDOM
+MEAN SQUARE VARIANCE
+RATIO (F TEST)
+BETWEEN 
+TREATMENTS
+Q1 h-1 S1^2=Q1/(h-1) Calculated value 
+of F=S1^2/S2^2
+WITHIN  
+TREATMENTS
+Q2 N-h S2^2=Q2/(N-h) Table value of 
+with LOS F(h-
+1,N-h)
+TOTAL Q N-1
+
+--- Page 4 ---
+Formulae for finding Q1, Q2 and Q
+N
+TxQ ij
+2
+2
+−=
+nsobservatioofvaluetotaltheisTfactorCorrection
+N
+T
+n
+TQ
+i
+i
+22
+1 −=
+12 QQQ −=
+
+--- Page 5 ---
+Working procedure
+H0: There is no significant difference between 
+column means
+H1: There is significant difference between 
+column means
+Step 1: Find N, the number of observations
+Step 2: Find T, the total value of all observations
+Step 3: Find T^2/N, the correction factor
+
+--- Page 6 ---
+Step 4: calculate the total sum of squares Q
+Step 5: Calculate the Q1 (sum of squares between treatments)
+Step 6: Prepare the ANOVA table to calculate F-ratio
+Step 7: Find the table value.
+Step 8: Conclusion
+N
+TXXQ
+2
+2
+2
+2
+1 ...−++=
+N
+T
+N
+X
+N
+XQ
+2
+2
+2
+2
+1
+2
+1 ...)()(1 −++=
+
+--- Page 7 ---
+Problems 
+A test was given to 5 students chosen at random 
+from B.Tech., class of each of the three 
+universities in Chennai. Their scores were 
+found as follows: Test the significant 
+difference between three universities.
+Universi ty Scores
+A 9 7 6 5 8
+B 7 4 5 4 5
+C 6 5 6 7 6
+
+--- Page 8 ---
+Problem-2 
+A car rental agency, which uses 5 different brands of 
+tyres in the process of deciding the brand of tyre to 
+purchase as standard equipment for its fleet, finds 
+that each of 5 tyres of each brand last the following 
+number of kilometres (in thousands):
+Test the hypothesis that the five tyre brands have 
+almost the same average life.
+A B C D E
+36 46 35 45 41
+37 39 42 36 39
+42 35 37 39 37
+38 37 43 35 35
+47 43 38 32 38
+
+--- Page 9 ---
+The following figures relate to production in kgs. 
+of three variables A,B,C of wheat sown on 12 
+plots.
+Is there any significant difference in the 
+production of the variables.
+A 14 16 18
+B 14 13 15 22
+C 18 16 19 19 20
+
+--- Page 10 ---
+ANOVA for RBD (two way)
+VARIATION SUM OF 
+SQUARES
+DEGREE OF 
+FREEDOM
+MEAN SQUARE VARIANCE
+RATIO (F TEST)
+TABLE VALUE 
+BETWEEN
+THE 
+COLUMNS
+QC C-1 SC^2=QC/(C-1) Calculated
+value of 
+FC=SE^2/SC^2
+FC(N-C-
+R+1,C-1)
+BETWEEN
+THE ROWS
+QR R-1 SR^2=QR/(R-1) Calculated 
+value of 
+FR=SE^2/SR^2
+FR(N-C-
+R+1,R-1)
+ERROR QE N-C-R+1 SE^2=QE/(N-C-
+R+1)
+TOTAL Q N-1
+
+--- Page 11 ---
+Formula for RBD
+calculate the total sum of squares Q
+N
+TXXQ
+2
+2
+2
+2
+1 ...−++=
+N
+T
+N
+X
+N
+XQC
+2
+1
+2
+2
+1
+2
+1 ...)()( −++=
+N
+T
+N
+Y
+N
+YQR
+2
+2
+2
+2
+2
+2
+1 ...)()( −++=
+QRQCQQE −−=
+
+--- Page 12 ---
+Example 
+The following table gives monthly sales (in thousand 
+rupees) of a certain firm in the 3 states by its four 
+salesmen.
+Setup the analysis of variance table and test whether 
+there is any significant difference (i) between the 
+salesmen (ii) between sales in the states.
+States Salesmen 
+I II III IV
+A 6 5 3 8
+B 8 9 6 5
+C 10 7 8 7
+
+--- Page 13 ---
+Example 
+Perform a two-way ANOVA on the data given 
+below.
+Treatment 1 Treatment 2
+A B C
+A 30 26 38
+B 24 29 28
+C 33 24 35
+D 36 31 30
+E 27 35 33
+
+--- Page 14 ---
+ANOVA for LSD (Three way)
+VARIATION SUM OF 
+SQUARE
+S
+DEGREE
+OF 
+FREEDOM
+MEAN SQUARE VARIANCE
+RATIO (F 
+TEST)
+TABLE 
+VALUE 
+BETWEEN THE 
+COLUMNS
+QC k-1 SC^2=QC/(k-1) FC=SE^2/SC^2 F((k-1)(k-
+2),(k-1))
+BETWEEN THE 
+ROWS
+QR k-1 SR^2=QR/(k-1) FR=SE^2/SR^2 F((k-1)(k-
+2),(k-1))
+BETWEEN THE 
+TREATMENTS
+QT k-1 ST^2=QT/(k-1) FT=SE^2/ST^2 F((k-1)(k-
+2),(k-1))
+ERROR QE (k-1)(k-2) SE^2=QE/(k-1)(k-2)
+TOTAL Q N-1
+
+--- Page 15 ---
+Example
+The following is a LSD when 4 varieties of seeds 
+are being tested. Set up the ANOVA and state 
+your conclusion.
+A105 B95 C125 D115
+C115 D125 A105 B105
+D115 C95 B105 A115
+B95 A135 D95 C115
+
+--- Page 16 ---
+Example
+Study the effectiveness of three teaching 
+methods A,B and C from the achievement scores 
+given below tabulated age and aptitude wise.
+aptitude Age 
+Young Middle Old 
+Low A82 B87 C80
+Medium B92 C82 A81
+High C90 A83 B88
+

@@ -1,0 +1,9 @@
+# Extracted text output files
+Layer_1/extracted_text/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/

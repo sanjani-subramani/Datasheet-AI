@@ -1,0 +1,41 @@
+--- Page 1 ---
+  
+Programme : B.Tech. Semester : Winter25-26 
+Course : BCSE203E: 
+Web Programming Lab Slot : TG1/TG2 
+Faculty : Dr. Valarmathi Sudhakar Marks : 10 
+ 
+ 
+ 
+JavaScript Basics 
+ 
+Exercise – 8 
+Date: 04/02/2026 
+1. Create a basic calculator that takes two numbers from the user and performs basic 
+mathematical operations (addition, subtraction, multiplication, division and mod) using 
+prompt and alert. 
+2. Write a JavaScript program to use prompt() to ask for the user's age and alert() to 
+confirm whether the user is eligible to drive. 
+3. Write a JavaScript program to use confirm() to ask the user for confirmation whether he is 
+a student while entering his registration number. 
+4. A General Service company hired you to calculate the labour cost and total charge for the 
+services rendered to their client based on the formula given below: 
+Rate per hour : Rs.45/- 
+Labour cost : Rate per hour * hours work 
+Total Charge : Labour cost + Cost of Materials. 
+Write a JavaScript program (Internal) using suitable pop-up boxes to read the necessary inputs 
+and display the output. 
+ 
+5. Write a JavaScript program to accept reg.no and name. 
+Display your registration number as shown below by applying inline style using 
+document.write. 
+ 
+Display your name as shown below by applying inline style using innerHTML. 
+ 
+6. A circus has an entry ticket booth. Visitors come to the booth, and order tickets for adults 
+and children. The booth attendant collects the entry fee, and prints out the tickets. Write 
+a JavaScript program (External) to display the total amount in a given text box on clicking 
+‘Total’ button. 
+ 
+
+
