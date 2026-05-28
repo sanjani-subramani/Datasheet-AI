@@ -1,20 +1,30 @@
-Basler acA2040-90um Camera Datasheet
+Basler acA2040-90um - Camera Datasheet
 
 Product Name: acA2040-90um
 Manufacturer: Basler
+Series: ace classic
 
+Sensor Specifications:
+Sensor: CMOSIS CMV4000
 Sensor Technology: CMOS, global shutter
-Resolution: 2048 x 2048 pixels
-Frame Rate: 90 fps
-Pixel Size: 5.5 x 5.5 um
 Sensor Size: 1 inch
-Interface: USB 3.0
+Resolution: 2048 x 2048 pixels
+Pixel Size: 5.5 x 5.5 um
+
+Performance:
+Frame Rate: 90 fps
 Bit Depth: 8 bit, 12 bit
 
+Interface:
+Interface: USB 3.0
+Mount: C-mount
+
+Physical:
+Dimensions: 29 x 29 x 42 mm
+Weight: 65 g
 Operating Temperature: 0 to 50 degrees C
 Power Consumption: 4.5 W
-Weight: 65 g
-Dimensions: 29 x 29 x 42 mm
 
-Application: Industrial inspection, machine vision,
-quality control on conveyor belts.
+Application:
+Suitable for industrial inspection, machine vision,
+quality control, conveyor belt inspection.

@@ -1,5 +1,5 @@
 import os
-from pypdf import PdfReader
+import pdfplumber
 
 # Folder where PDFs are
 folder = "."
@@ -26,22 +26,23 @@ print("-----------------------------")
 # Read each PDF one by one
 for pdf_file in pdf_files:
     print(f"\nReading: {pdf_file}")
-    reader = PdfReader(pdf_file)
-    total_pages = len(reader.pages)
-    print(f"Total pages: {total_pages}")
+    
+    with pdfplumber.open(pdf_file) as pdf:
+        total_pages = len(pdf.pages)
+        print(f"Total pages: {total_pages}")
 
-    # Save output inside extracted_text folder
-    output_filename = os.path.join(output_folder, pdf_file + ".txt")
-    with open(output_filename, "w", encoding="utf-8") as output_file:
-        for page_number in range(total_pages):
-            page = reader.pages[page_number]
-            text = page.extract_text()
-            output_file.write(f"--- Page {page_number + 1} ---\n")
-            output_file.write(text)
-            output_file.write("\n\n")
+        output_filename = os.path.join(output_folder, pdf_file + ".txt")
+        with open(output_filename, "w", encoding="utf-8") as output_file:
+            for page_number, page in enumerate(pdf.pages):
+                text = page.extract_text()
+                output_file.write(f"--- Page {page_number + 1} ---\n")
+                if text:
+                    output_file.write(text)
+                else:
+                    output_file.write("[No text found on this page]")
+                output_file.write("\n\n")
 
     print(f"Saved to: {output_filename}")
 
 print("\n-----------------------------")
 print("All PDFs processed successfully!")
-print(f"All text files saved in: {output_folder}/")

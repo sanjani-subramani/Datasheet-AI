@@ -1,0 +1,778 @@
+--- Page 1 ---
+Basler ace
+AREA SCAN CAMERAS
+ace classic
+ace U
+ace L
+ Broadest selection in the industry
+ Best price/performance ratio
+ Latest sensor technology
+ High value-add features
+
+--- Page 2 ---
+OVERVIEW
+All You Need Is ace
+The Basler ace camera series offers the broadest selec-
+tion ever, covering the entire spectrum of advantages,
+including cost-effectiveness, ultra-fast speeds and
+superior image quality in a very small housing. Since
+its introduction in 2009, the ace series has grown to
+more than 130 models, making it the largest series in
+the market.
+This ace of cameras is available with sensors from
+all leading manufacturers, so you can easily find the
+right ace camera model for your application. With this
+variety of sensors and interfaces, combined with the
+extensive features offered, the ace – in all its variants
+- is a fit for a wide range of Vision applications. Basler
+ace is all you need.
+Choose the camera model that best suits your require-
+ments from our three ace product lines: ace classic,
+ace U and ace L.
+ace classic ace U
+The ace classic is the starting CMOS sensors from CMOSIS, With speeds of up to 751 fps
+point of our ace series and offers e2V and ON Semi conductor (MT and the latest CMOS sensors
+a very cost-effective and reliable line) as well as CCD sensors from from Sony (Pregius, STARVIS,
+camera selection, with a stan- Sony. It offers a broad selection Exmor R) and ON Semicon-
+dard feature set for a wide range of interfaces (USB 3.0, GigE, ductor (PYTHON), the ace U
+of applications. The ace classic Camera Link) and covers resolu- represents the next evolution
+includes camera models with tions from VGA to 14 MP. of the ace in the areas of sensor
+Highlights of the ace classic Highlights of the ace U
+ First of its kind and the most  Wide interface selection:  State-of-the-art s ensors from
+successful camera series in USB 3.0, GigE, Camera Link Sony (Pregius, S TARVIS,
+the Machine Vision market Exmor R) and ON Semicon-
+ Standard Feature Set
+ductor (PYTHON)
+ CMOS and CCD sensors,
+including NIR-enhanced versi-  Fast speeds of up to 751 fps
+ons with an extensive variety
+of pixel sizes
+2
+
+--- Page 3 ---
+PGI
+PGI Feature Set
+All cameras within the ace U and ace L product line come
+with Basler’s powerful in-camera image optimization PGI that
+improves your images at the full speed of your camera. It is
+a unique combination of 5 × 5 debayering, color-anti-aliasing,
+denoising and improved sharpness. This gives you the oppor-
+tunity to get the best pictures directly from your camera
+without any additional processor load. Use the options of the
+Basler pylon Camera Software Suite to enable PGI, or change
+settings for selected PGI components for optimal results.
+Learn more about PGI at www.baslerweb.com/PGI
+ace U ace L
+technology and firmware fea- The ace L profits from the same To accommodate these larger
+tures. It offers state-of-the-art evolutionary steps in firmware sensors, the camera housing is
+CMOS technology and inter- features as the ace U. Further- slightly larger than other ace
+face standards combined with more, it is capable of carrying models and has a footprint of
+advanced firmware features high resolution 9 and 12 MP Sony 40 mm × 30 mm.
+such as PGI. Pregius CMOS sensors with opti-
+cal formats above 1".
+Highlights of the ace U Highlights of the ace L
+ USB3 Vision, GigE Vision 2.0  1.1" sensors  USB3 Vision, GigE Vision 2.0
+(IEEE1588, PTP) (IEEE1588, PTP)
+ Brilliant image quality at
+ Advanced Feature Set speeds of up to 42 fps  Advanced Feature Set
+All specifications in this brochure are subject to change without notice.
+Latest specifications and availability can be found on our website www.baslerweb.com/ace. Please visit www.baslerweb.com/manuals for
+the detailed camera User’s Manual and www.baslerweb.com/thirdparty for information on third party software.
+3
+
+--- Page 4 ---
+TECHNICAL DETAILS
+Basler ace GigE
+Product Group Specifications
+Interface Fast Ethernet (100 Mbit/s) or Gigabit Ethernet (1000 Mbit/s)
+Housing Size (L × W × H) ace classic/ace U: 42 mm × 29 mm × 29 mm, ace L: 50 mm × 40 mm × 30 mm
+Housing Temperature 0 °C – 50 °C
+Typical Weight < 90 g
+ace classic: Power over Ethernet (IEEE 802.3af) or 12 VDC (+/- 10%)
+Power Requirements
+ace U/ace L: Power over Ethernet (IEEE 802.3af) or 12-24 VDC (+/- 10%)1
+Synchronization Via hardware trigger, via software trigger, or free-run
+Exposure Control Via hardware trigger2 or programmable via the camera API
+Conformity CE, RoHS, GenICam, GigE Vision, IP30, UL3, FCC, IEEE 802.3af (PoE)
+Driver Basler pylon Camera Software Suite or 3rd party GigE Vision Software
+Operating System Windows, Linux, macOS
+1 also applies to ace classic models acA3800-10gm/gc, acA4600-7gc
+2 not applicable for acA1280-60gm/gc, acA1300-60gm/gc, acA1600-60gm/gc, acA3800-10gm/gc, acA4600-7gc
+3 UL in preparation for acA5472-5gm/gc
+15 23.7
+12 42
+54 6.3 16.5 22
+Basler ace classic acA640-90gm/gc acA640-120gm/gc acA780-75gm/gc
+Model Specifications
+Resolution (H×V pixels) 659 × 494 659 × 494 782 × 582
+Sensor Sony ICX424 Sony ICX618 Sony ICX415
+Sensor Size (optical) 1/3" 1/4" 1/2"
+Sensor Technology CCD, global shutter
+Pixel Size [ m2] 7.4 × 7.4 5.6 × 5.6 8.3 × 8.3
+Frame Rate [fps] 90 120 75
+Mono/Color Mono/Color
+Pixel Format Mono (8, 12, 12 Packed), Bayer BG (8, 12, 12 Packed), YUV 4:2:2 (Packed, YUYV Packed)
+Lens Mount C, CS C, CS C, CS*
+Digital I/O 1 opto-isolated input + 1 opto-isolated output
+Power Consumption (PoE/AUX) 3.1 W/2.7 W 2.3 W/2.0 W 3.6 W / 3.3 W
+*only available for color model
+4
+02 21
+29
+92
+40
+3x M3
+5.5 50 41.9
+4x M2 55.5 6.3
+03
+12
+Dimensions (in mm): ace classic & ace U Dimensions (in mm): ace L
+
+--- Page 5 ---
+TECHNICAL DETAILS
+Basler ace classic acA1300-22gm/gc acA1300-30gm/gc acA1280-60gm/gc
+Model Specifications
+Resolution (H×V pixels) 1296 × 966 1296 × 966 1282 × 1026
+Sensor Sony ICX445 Sony ICX445 E2V EV76C560
+Sensor Size (optical) 1/3" 1/3" 1/1.8"
+Sensor Technology CCD, global shutter CCD, global shutter CMOS, rolling shutter
+Pixel Size [ m2] 3.75 × 3.75 3.75 × 3.75 5.3 × 5.3
+Frame Rate [fps] 22 30 60
+Mono/Color Monor / Color
+Mono (8, 12, 12 Packed),
+Bayer RG (8, 12, 12 Packed),
+Pixel Format
+YUV 4:2:2 (Packed,
+YUYV Packed)
+Lens Mount CS C, CS C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output
+Power Consumption (PoE/AUX) 2.5 W/2.2 W 2.5 W/2.2 W 2.4 W/2.0 W
+Basler ace classic acA1300-60gm/gc acA1300-60gmNIR acA1600-20gm/gc
+Model Specifications
+Resolution (H × V pixels) 1282 × 1026 1282 × 1026 1626 × 1236
+Sensor E2V EV76C560 E2V EV76C661 Sony ICX274
+Sensor Size (optical) 1/1.8"
+CMOS, global and rolling CMOS, global and rolling
+Sensor Technology CCD, global shutter
+shutter shutter
+Pixel Size [ m2] 5.3 × 5.3 5.3 × 5.3 4.4 × 4.4
+Frame Rate [fps] 60 60 20
+Mono/Color Mono/Color Mono NIR-enhanced Mono/Color
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Mono (8, 12, 12 Packed),
+Bayer RG (8, 12, 12 Packed), Bayer BG (8, 12, 12 Packed),
+Pixel Format YUV 4:2:2 (Packed,
+YUV 4:2:2 (Packed, YUV 4:2:2 (Packed,
+YUYV Packed)
+YUYV Packed) YUYV Packed)
+Lens Mount C, CS C, CS C, CS**
+Digital I/O 1 opto-isolated input + 1 opto-isolated output
+Power Consumption (PoE/AUX) 2.4 W/2.0 W 2.4 W/2.0 W 3.4 W/2.9 W
+**only available for monochrome model
+5
+
+--- Page 6 ---
+TECHNICAL DETAILS
+Basler ace classic acA1600-60gm/gc acA1920-25gm/gc acA2000-50gm/gc
+Model Specifications
+Resolution (H×V pixels) 1602 × 1202 1920 × 1080 2048 × 1088
+ON Semiconductor
+Sensor E2V EV76C570 CMOSIS CMV2000
+MT9P031
+Sensor Size (optical) 1/1.8" 1/3.7" 2/3"
+CMOS, global and
+Sensor Technology CMOS, rolling shutter CMOS, global shutter
+rolling shutter
+Pixel Size [ m2] 4.5 × 4.5 2.2 × 2.2 5.5 × 5.5
+Frame Rate [fps] 60 25 50
+Mono/Color Mono/Color
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Bayer RG (8, 12, 12 Packed), Bayer BG (8, 12, 12 Packed), Bayer GR (8, 12, 12 Packed),
+Pixel Format
+YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV
+Packed) Packed) Packed)
+Lens Mount C, CS* C,CS* C,CS
+Digital I/O 1 opto-isolated input + 1 opto-isolated output
+Power Consumption (PoE/AUX) 2.5 W/2.1 W 2.5 W/2.2 W 2.8 W/2.5 W
+*only available for color model
+Basler ace classic acA2000-50gmNIR acA2040-25gm/gc acA2040-25gmNIR
+Model Specifications
+Resolution (H×V pixels) 2048 × 1088 2048 × 2048 2048 × 2048
+CMOSIS CMV2000 CMOSIS CMV4000
+Sensor CMOSIS CMV4000
+NIR-enhanced NIR-enhanced
+Sensor Size (optical) 2/3" 1" 1"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 5.5 × 5.5
+Frame Rate [fps] 50 25 25
+Mono/Color Mono NIR-enhanced Mono/Color Mono NIR-enhanced
+Mono (8, 12, 12 Packed),
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Bayer GR (8, 12, 12 Packed),
+Pixel Format YUV 4:2:2 (Packed, YUV 4:2:2 (Packed,
+YUV 4:2:2 (Packed,
+YUYV Packed) YUYV Packed)
+YUYV Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output
+Power Consumption (PoE/AUX) 2.8 W/2.5 W 2.8 W/2.5 W 2.9 W/2.6 W
+*only available for color model
+6
+
+--- Page 7 ---
+TECHNICAL DETAILS
+Basler ace classic acA2500-14gm/gc acA3800-10gm/gc acA4600-7gc
+Model Specifications
+Resolution (H×V pixels) 2592 × 1944 3840 × 2748 4608 × 3288
+ON Semiconductor ON Semiconductor ON Semiconductor
+Sensor
+MT9P031 MT9J003 MT9F002
+Sensor Size (optical) 1/2.5" 1/2.3" 1/2.3"
+Sensor Technology CMOS, rolling shutter
+Pixel Size [ m2] 2.2 × 2.2 1.67 × 1.67 1.4 × 1.4
+Frame Rate [fps] 14 10 7
+Mono/Color Mono/Color Mono/Color Color
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Mono 8, Bayer BG (8, 12,
+Bayer GB (8, 12, 12 Packed), Bayer BG (8, 12, 12 Packed),
+Pixel Format 12 Packed), YUV 4:2:2
+YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV
+(Packed, YUYV Packed)
+Packed) Packed)
+Lens Mount C, CS C C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output
+Power Consumption (PoE/AUX) 2.5 W/2.2 W 3.5 W/3.3 W 3.5 W/3.3 W
+NEW
+Basler ace U acA640-121gm acA640-300gm/gc acA720-290gm/gc
+Model Specifications
+Resolution (H×V pixels) 659 × 494 640 × 480 720 x 540
+ON Semiconductor
+Sensor ICX618 Replacement Sony IMX287
+PYTHON 300
+Sensor Size (optical) 1/4" 1/4" 1/2.9"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 5.6 × 5.6 4.8 × 4.8 6.9 × 6.9
+Frame Rate [fps] 130 376 291
+Mono/Color Mono Mono/Color Mono/Color
+Mono (8, 10, 10 Packed), Mono (8, 10, 10 Packed),
+Bayer BG (8, 10, 10 Packed), Bayer BG (8, 10, 10 Packed),
+Pixel Format Mono (8, 12, 12 Packed)
+YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV
+Packed) Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 1 GPIO
+Power Consumption (PoE/AUX) ~ 3 W 3.5 W/3.1 W 3.2 W/2.9 W
+7
+
+--- Page 8 ---
+TECHNICAL DETAILS
+Basler ace U acA800-200gm/gc acA1300-75gm/gc acA1440-73gm/gc
+Model Specifications
+Resolution (H×V pixels) 800 × 600 1280 × 1024 1440 x 1080
+ON Semiconductor ON Semiconductor
+Sensor Sony IMX273
+PYTHON 500 PYTHON 1300
+Sensor Size (optical) 1/3.6" 1/2" 1/2.9"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 4.8 × 4.8 4.8 × 4.8 3.45 × 3.45
+Frame Rate [fps] 240 88 73
+Mono/Color Mono/Color
+Mono (8, 10, 10 Packed), Mono (8, 10, 10 Packed), Mono (8, 12, 12 Packed),
+Bayer BG (8, 10, 10 Packed), Bayer BG (8, 10, 10 Packed), Bayer BG (8, 12, 12 Packed),
+Pixel Format
+YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV
+Packed) Packed) Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 1 GPIO
+Power Consumption (PoE/AUX) 3.5 W/3.1 W 3.5 W/3.1 W 3.2 W/2.9 W
+Basler ace U acA1920-40gm/gc acA1920-48gm/gc acA1920-50gm/gc
+Model Specifications
+Resolution (H×V pixels) 1920 × 1200
+ON Semiconductor
+Sensor Sony IMX249 Sony IMX174
+PYTHON 2000
+Sensor Size (optical) 1/1.2" 2/3" 1/1.2"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 5.86 × 5.86 4.8 × 4.8 5.86 × 5.86
+Frame Rate [fps] 42 50 50
+Mono/Color Mono/Color
+Mono (8, 12, 12 Packed), Mono (8, 10, 10 Packed), Mono (8, 12, 12 Packed),
+Bayer RG (8, 12, 12 Packed), Bayer BG (8, 10, 10 Packed), Bayer RG (8, 12, 12 Packed),
+Pixel Format
+YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV
+Packed) Packed) Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 1 GPIO
+Power Consumption (PoE/AUX) 3.4 W/3.1 W 3.7 W/3.3 W 3.6 W/3.2 W
+8
+
+--- Page 9 ---
+TECHNICAL DETAILS
+Basler ace U acA2040-35gm/gc acA2440-20gm/gc acA2500-20gm/gc
+Model Specifications
+Resolution (H×V pixels) 2048 × 1536 2448 × 2048 2592 × 2048
+ON Semiconductor
+Sensor Sony IMX265 Sony IMX264
+PYTHON 5000
+Sensor Size (optical) 1/1.8" 2/3" 1"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 3.45 × 3.45 3.45 × 3.45 4.8 × 4.8
+Frame Rate [fps] 36 23 21
+Mono/Color Mono/Color
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed), Mono (8, 10, 10 Packed),
+Bayer RG (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed), Bayer BG (8, 10, 10 Packed),
+Pixel Format
+YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed, YUYV YUV 4:2:2 (Packed,
+Packed) Packed) YUYV Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 1 GPIO
+Power Consumption (PoE/AUX) 3.2 W/2.7 W 3.3 W/2.7 W 4.1 W/3.6 W
+NEW
+Basler ace U acA3088-16gm/gc acA4024-8gm/gc acA5472-5gm/gc
+Model Specifications
+Resolution (H×V pixels) 3088 × 2064 4024 × 3036 5472 × 3648
+Sensor Sony IMX178 Sony IMX226 Sony IMX183
+Sensor Size (optical) 1/1.8" 1/1.7" 1"
+Sensor Technology CMOS, rolling shutter
+Pixel Size [ m2] 2.4 × 2.4 1.85 × 1.85 2.4 × 2.4
+Frame Rate [fps] 16 8 5
+Mono/Color Mono/Color
+Pixel Format Mono (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed), YUV 4:2:2 (Packed, YUYV Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 1 GPIO
+Power Consumption (PoE/AUX) 2.9 W/2.5 W 2.9 W/2.5 W 3.0 W/2.6 W
+9
+
+--- Page 10 ---
+TECHNICAL DETAILS
+Basler ace L acA4096-11gm/gc acA4112-8gm/gc
+Model Specifications
+Resolution (H×V pixels) 4096 × 2160 4096 × 3000
+Sensor Sony IMX267 Sony IMX304
+Sensor Size (optical) 1" 1.1"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 3.45 × 3.45
+Frame Rate [fps] 12 8
+Mono/Color Mono/Color
+Pixel Format Mono (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed), YUV 4:2:2 (Packed, YUYV Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 1 GPIO
+Power Consumption (PoE/AUX) 3.2 W / 2.7 W
+10
+
+--- Page 11 ---
+TECHNICAL DETAILS
+Basler ace USB
+Product Group Specifications
+Interface USB 3.0
+Housing Size (L × W × H) ace classic/ace U: 29.3 mm × 29 mm × 29 mm, ace L: 35.8 mm × 40 mm × 30 mm
+Housing Temperature 0 °C - 50 °C1
+Typical Weight < 80 g
+Power Requirements Via USB 3.0 interface
+Power Suspend Mode Yes, less than 0.02 W, configurable
+Synchronization Via hardware trigger, via software trigger or free-run
+Exposure Control Via hardware trigger2 or programmable via the camera API
+Conformity CE, RoHS, GenICam, USB3 Vision, IP30, UL3, FCC
+Driver Basler pylon Camera Software Suite or 3rd party USB3 Vision Software
+Operating System Windows, Linux, macOS
+1 0 °C - 60 °C for acA2040-90um/uc, acA2040-90umNIR
+2 not applicable for ace models with sensors of the MT line from ON Semiconductor
+3 UL in preparation for acA5472-17um/uc
+15 23.7
+12 29.3
+41.3 6 16.5 22
+Basler ace classic acA640-90um/uc acA640-120um/uc acA1300-30um/uc
+Model Specifications
+Resolution (H×V pixels) 659 × 494 659 × 494 1296 × 966
+Sensor Sony ICX424 Sony ICX618 Sony ICX445
+Sensor Size (optical) 1/3" 1/4" 1/3"
+Sensor Technology CCD, global shutter
+Pixel Size [ m2] 7.4 × 7.4 5.6 × 5.6 3.75 × 3.75
+Frame Rate [fps] 90 120 30
+Mono/Color Mono/Color
+Pixel Format Mono (8, 12, 12 Packed), Bayer BG (8, 12, 12 Packed), YCbCr422_8, RGB8, BGR8
+Lens Mount C, CS* C, CS C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.0 W 3.0 W 2.5 W
+*only available for color model
+11
+02 21
+29
+92
+3x M3 40
+4x M2
+03
+5.5 35.8 28
+41.3 6.9
+12
+Dimensions (in mm): ace classic & ace U Dimensions (in mm): ace L
+
+--- Page 12 ---
+TECHNICAL DETAILS
+Basler ace classic acA1600-20um/uc acA1920-25um/uc acA2000-165um/uc
+Model Specifications
+Resolution (H×V pixels) 1626 × 1236 1920 × 1080 2048 × 1088
+ON Semiconductor
+Sensor Sony ICX274 CMOSIS CMV2000
+MT9P031
+Sensor Size (optical) 1/1.8" 1/3.7" 2/3"
+Sensor Technology CCD, global shutter CMOS, rolling shutter CMOS, global shutter
+Pixel Size [ m2] 4.4 × 4.4 2.2 × 2.2 5.5 × 5.5
+Frame Rate [fps] 20 26 165
+Mono/Color Mono/Color
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Mono (8, 12, 12 Packed)**,
+Pixel Format Bayer BG (8, 12, 12 Packed), Bayer GB (8, 12, 12 Packed),
+Bayer BG (8, 12, 12 Packed)
+YCbCr422_8, RGB8, BGR8 YCbCr422_8
+Lens Mount C, CS** C C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.5 W 2.2 W 3.2 W
+**only available for monochrome model
+Basler ace classic acA2000-165umNIR acA2040-90um/uc acA2040-90umNIR
+Model Specifications
+Resolution (H×V pixels) 2048 × 1088 2048 × 2048 2048 × 2048
+CMOSIS CMV2000 CMOSIS CMV4000
+Sensor CMOSIS CMV4000
+NIR-enhanced NIR-enhanced
+Sensor Size (optical) 2/3" 1" 1"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 5.5 × 5.5
+Frame Rate [fps] 165 90 90
+Mono/Color Mono NIR-enhanced Mono/Color Mono NIR-enhanced
+Mono (8, 12, 12 Packed)**,
+Pixel Format Mono (8, 12, 12 Packed) Mono (8, 12, 12 Packed)
+Bayer BG (8, 12, 12 Packed)
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.2 W
+**only available for monochrome model
+12
+
+--- Page 13 ---
+TECHNICAL DETAILS
+Basler ace classic acA2500-14um/uc acA3800-14um/uc acA4600-10uc
+Model Specifications
+Resolution (H×V pixels) 2592 × 1944 3840 × 2748 4608 × 3288
+ON Semiconductor ON Semiconductor ON Semiconductor
+Sensor
+MT9P031 MT9J003 MT9F002
+Sensor Size (optical) 1/2.5" 1/2.3" 1/2.3"
+Sensor Technology CMOS, rolling shutter
+Pixel Size [ m2] 2.2 × 2.2 1.67 × 1.67 1.4 × 1.4
+Frame Rate [fps] 14 14 10
+Mono/Color Mono/Color Mono/Color Color
+Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Mono 8, Bayer BG (8, 12, 12
+Pixel Format Bayer GB (8, 12, 12 Packed), Bayer BG (8, 12, 12 Packed),
+Packed), YCbCr422_8
+YCbCr422_8 YCbCr422_8
+Lens Mount C, CS C C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 2.2 W 2.8 W 2.8 W
+Basler ace U acA640-750um/uc acA720-520um/uc acA800-510um/uc
+Model Specifications
+Resolution (H×V pixels) 640 × 480 720 × 540 800 × 600
+ON Semiconductor ON Semiconductor
+Sensor Sony IMX287
+PYTHON 300 PYTHON 500
+Sensor Size (optical) 1/4" 1/2.9" 1/3.6"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 4.8 × 4.8 6.9 × 6.9 4.8 × 4.8
+Frame Rate [fps] 751 525 511
+Mono/Color Mono/Color
+Mono (8, 10, 10 Packed), Mono (8, 12, 12 Packed), Mono (8, 10, 10 Packed),
+Pixel Format Bayer BG (8, 10, 10 Packed), Bayer BG (8, 12, 12 Packed), Bayer BG (8, 10, 10 Packed),
+YCbCr422_8, RGB8, BGR8 YCbCr422_8, RGB8, BGR8 YCbCr422_8, RGB8, BGR8
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.3 W 3.0 W 3.3 W
+13
+
+--- Page 14 ---
+TECHNICAL DETAILS
+Basler ace U acA1300-200um/uc acA1440-220um/uc acA1920-40um/uc
+Model Specifications
+Resolution (H×V pixels) 1280 × 1024 1440 × 1080 1920 × 1200
+ON Semiconductor
+Sensor Sony IMX273 Sony IMX249
+PYTHON 1300
+Sensor Size (optical) 1/2" 1/2.9" 1/1.2"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 4.8 × 4.8 3.45 × 3.45 5.86 × 5.86
+Frame Rate [fps] 203 227 41
+Mono/Color Mono/Color
+Mono (8, 10, 10 Packed), Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Pixel Format Bayer BG (8, 10, 10 Packed), Bayer BG (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed),
+YCbCr422_8, RGB8, BGR8 YCbCr422_8, RGB8, BGR8 YCbCr422_8, RGB8, BGR8
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.3 W 3.3 W 2.9 W
+Basler ace U acA1920-150um/uc acA1920-155um/uc acA2040-55um/uc
+Model Specifications
+Resolution (H×V pixels) 1920 × 1200 1920 × 1200 2048 × 1536
+ON Semiconductor
+Sensor Sony IMX174 Sony IMX265
+PYTHON 2000
+Sensor Size (optical) 2/3" 1/1.2" 1/1.8"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 4.8 × 4.8 5.86 × 5.86 3.45 × 3.45
+Frame Rate [fps] 150 164 55
+Mono/Color Mono/Color
+Mono (8, 10, 10 Packed), Mono (8, 12, 12 Packed), Mono (8, 12, 12 Packed),
+Pixel Format Bayer BG (8, 10, 10 Packed), Bayer RG (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed),
+YCbCr422_8, RGB8, BGR8 YCbCr422_8, RGB8, BGR8 YCbCr422_8, RGB8, BGR8
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 4.2 W 3.7 W 2.6 W
+14
+
+--- Page 15 ---
+TECHNICAL DETAILS
+Basler ace U acA2040-120um/uc acA2440-35um/uc acA2440-75um/uc
+Model Specifications
+Resolution (H×V pixels) 2048 × 1536 2448 × 2048 2448 × 2048
+Sensor Sony IMX252 Sony IMX264 Sony IMX250
+Sensor Size (optical) 1/1.8" 2/3" 2/3"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 3.45 × 3.45
+Frame Rate [fps] 120 35 75
+Mono/Color Mono/Color
+Pixel Format Mono (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed), YCbCr422_8, RGB8, BGR8
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.5 W 2.7 W 3.4 W
+NEW
+Basler ace U acA2500-60um/uc acA3088-57um/uc acA4024-29um/uc acA5472-17um/uc
+Model Specifications
+Resolution (H×V pixels) 2592 × 2048 3088 × 2064 4024 × 3036 5472 × 3648
+ON Semiconductor
+Sensor Sony IMX178 Sony IMX226 Sony IMX183
+PYTHON 5000
+Sensor Size (optical) 1" 1/1.8" 1/1.7" 1"
+Sensor Technology CMOS, global shutter CMOS, rolling shutter CMOS, rolling shutter CMOS, rolling shutter
+Pixel Size [ m2] 4.8 × 4.8 2.4 × 2.4 1.85 × 1.85 2.4 x 2.4
+Frame Rate [fps] 60 59 31 17
+Mono/Color Mono/Color
+Mono
+Mono (8, 12, 12 Mono (8, 12, 12 Mono (8, 12, 12
+(8, 10, 10 Packed),
+Packed), Bayer RG (8, Packed), Bayer RG (8, Packed), Bayer RG (8,
+Pixel Format Bayer BG (8, 10, 10
+12, 12 Packed), YCb- 12, 12 Packed), YCb- 12, 12 Packed), YCb-
+Packed), YCbCr422_8,
+Cr422_8, RGB8, BGR8 Cr422_8, RGB8, BGR8 Cr422_8, RGB8, BGR8
+RGB8, BGR8
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 4.2 W 3.0 W 3.0 W ~3 W
+15
+
+--- Page 16 ---
+TECHNICAL DETAILS
+Basler ace L acA4096-30um/uc acA4096-40um/uc acA4112-20um/uc acA4112-30um/uc
+Model Specifications
+Resolution (H×V pixels) 4096 × 2168 4096 × 2168 4096 × 3000 4096 × 3000
+Sensor Sony IMX267 Sony IMX255 Sony IMX304 Sony IMX253
+Sensor Size (optical) 1" 1" 1.1" 1.1"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 3.45 × 3.45
+Frame Rate [fps] 32 42 23 30
+Mono/Color Mono/Color
+Pixel Format Mono (8, 12, 12 Packed), Bayer RG (8, 12, 12 Packed), YCbCr422_8, RGB8, BGR8
+Lens Mount C
+Digital I/O 1 opto-isolated input + 1 opto-isolated output + 2 Fast-GPIO (configurable as In/Out)
+Power Consumption 3.0 W 3.6 W 3.0 W 3.6 W
+16
+
+--- Page 17 ---
+TECHNICAL DETAILS
+Basler ace Camera Link
+Product Group Specifications
+Interface Camera Link (base, medium or full)
+Housing Size (L × W × H) 43.5 mm × 29 mm × 29 mm
+Housing Temperature 0 °C - 50 °C
+Typical Weight ≈ 100 g
+Power Requirements Power over Camera Link (PoCL) or 12VDC (+/- 10%)
+Synchronization Via hardware trigger, via software trigger or free-run
+Exposure Control Trigger width or timed
+Conformity CE, RoHS, GenICam, Camera Link, IP30, FCC
+Driver Basler pylon Camera Software Suite or 3rd party Camera Link Software
+Operating System Windows, Linux, macOS
+15 23.7
+3x M3
+12 43.5
+55.5 16.5 22 4x M2
+Basler ace classic acA2000-340km/kc acA2000-340kmNIR acA2040-180km/kc acA2040-180kmNIR
+Model Specifications
+Resolution (H×V pixels) 2048 × 1088 2048 × 1088 2048 × 2048 2048 × 2048
+CMOSIS CMV2000 CMOSIS CMV4000
+Sensor CMOSIS CMV2000 CMOSIS CMV4000
+NIR-enhanced NIR-enhanced
+Sensor Size (optical) 2/3" 2/3" 1" 1"
+Sensor Technology CMOS, global shutter
+Pixel Size [ m2] 5.5 × 5.5
+Frame Rate [fps] 340 340 180 180
+Mono/Color Mono/Color Mono NIR-enhanced Mono/Color Mono NIR-enhanced
+Lens Mount C
+Digital I/O 1 opto-isolated input or output (GPIO)
+Power Consumption 3.0 W
+17
+02 21
+29
+92
+Dimensions (in mm):
+
+--- Page 18 ---
+BASLER´S COMPONENTS
+Basler´s Components Enhance Your Vision
+Basler offers you extensively tested cables and lenses, which are optimized for use with our Basler cameras. Our
+cooperation with certified suppliers facilitates the operation of a high-performance image processing system.
+An image processing system needs more than just a USB 3.0 Accessories from Basler
+camera, lens and light source. A stable vision system
+also requires accessories for handling data transfer. Especially with a USB 3.0 interface, it is important to
+think about the right accessories to achieve stability in
+Basler offers a wide variety of accessories such as a system with one or more cameras. In particular USB
+lenses, I/O cables, power supplies, data cables, host 3.0 accessories from the consumer sector may lead
+adapter cards, hubs or switches designed to help to major disadvantages for the user, as they are not
+you get the most out of your camera. To ensure full designed to handle the higher demands of machine
+compatibility, all accessories are tested with our vision applications.
+cameras. Cables and power supplies are all EMC
+tested for industrial conditions by our support team. Our portfolio of USB 3.0 accessories covers a broad
+selection of cables, host adapter cards and a USB 3.0
+hub.
+Basler Original Equipment
+The accessories market for machine Your Benefits Through USB 3.0
+vision cameras is broad and deep. Accessories:
+Therefore, Basler offers products  High stability of your USB 3.0 set up
+specially developed for our cam-
+ Simple integration into all image processing
+eras, meaning camera and lens
+applications
+or cables harmonize perfectly with one another. The
+products are produced exclusively for us and are  Tested USB 3.0 accessories with reliable premi-
+available only from Basler. All products with the Basler um quality for industrial applications
+Original Equipment seal allow top performance when  Carefully selected accessories for a perfect
+combined with Basler cameras. match
+ Plug and play functionality
+Why Components from Basler? Have a look at the matching components for
+your camera model at
+ Perfect match with our Basler cameras
+www.baslerweb.com/accessories
+ Extensive and qualified portfolio
+ One-stop-shopping for your image processing
+system
+Typcial set-up of a camera system:
+ Performance stability through premium
+quality standards
+ Qualified selection of components avoids
+changes in existing systems
+ Professional consultancy during preselection
+Basler Lens Basler ace camera Cable USB 3.0 Power-I/O cable
+18
+
+--- Page 19 ---
+SSOOFFTTWWAARREE GGeett yyoouurr ffrreeee vveerrssiioonn::
+wwwwww..bbaasslleerrwweebb..ccoomm//ppyylloonn
+BBaasslleerr ppyylloonn CCaammeerraa SSooffttwwaarree SSuuiittee
+TThhee ppyylloonn CCaammeerraa SSooffttwwaarree SSuuiittee ooppeerraatteess wwiitthh aallll BBaasslleerr lliinnee ssccaann aanndd aarreeaa ssccaann ccaammeerraass -- nnoo mmaatttteerr wwhhaatt
+iinntteerrffaaccee tthheeyy uussee.. IItt ooffffeerrss ssttaabbllee,, rreelliiaabbllee aanndd flfleexxiibbllee ddaattaa eexxcchhaannggee bbeettwweeeenn BBaasslleerr ccaammeerraass aanndd PPCCss,, ffoorr
+WWiinnddoowwss,, mmaaccOOSS,, LLiinnuuxx oonn xx8866 aanndd AARRMM bbaasseedd ssyysstteemmss –– aatt aa vveerryy llooww CCPPUU llooaadd..
+ppyylloonn DDiirreecctt
+CC++++ AAPPII
+VViieewweerr IIPP SShhooww
+CCoonnfifigguurr aa tt oo rr CCLL TTWWAAIINN CC
+CCoonnfifigguurraattoorr ..NNEETT
+UUSSBB GGeennIICCaamm XXMMLL FFiillee
+CCoonnfifigguurraattoorr
+ppyylloonn CCaammeerraa SSooffttwwaarree SSuuiittee
+XXMMLL
+((WWiinnddoowwss//LLiinnuuxx//mmaaccOOSS,, 3322//6644 BBiitt,, xx8866//AARRMM))
+UUSSBB33 GGiiggEE VViissiioonn GGiiggEE VViissiioonn CCaammeerraa LLiinnkk IIEEEEEE 11339944 BBCCOONN ffoorr LLVVDDSS BBCCOONN ffoorr MMIIPPII
+VViissiioonn DDrriivveerr FFiilltteerr DDrriivveerr PPeerrffoorrmmaannccee DDrriivveerr CCoonnfifigguurraattiioonn DDrriivveerr DDrriivveerr AAddaapptteerr AAPPII DDrriivveerr
+TThhee aarrcchhiitteeccttuurree ooff tthhee ppyylloonn CCaammeerraa SSooffttwwaarree SSuuiittee iiss TThhee MMIIPPII DDrriivveerr PPaacckkaaggee ooffffeerrss pplluugg aanndd ppllaayy eexxppee--
+bbaasseedd oonn GGeennIICCaamm TTeecchhnnoollooggyy,, wwhhiicchh ooffffeerrss yyoouu eeaassyy rriieennccee wwiitthh BBaasslleerr MMIIPPII--CCSSII--22 ccaammeerraa mmoodduulleess ffoorr
+aacccceessss ttoo tthhee nneewweesstt ccaammeerraa mmooddeellss aanndd tthhee llaatteesstt ssuuppppoorrtteedd ppllaallttffoorrmmss
+ffeeaattuurreess.. CChhaannggeess ttoo aann eexxiissttiinngg ccaammeerraa ddeevviiccee iinn yyoouurr
+aapppplliiccaattiioonn eesssseennttiiaallllyy bbeeccoommee aa pplluugg--aanndd--ppllaayy pprroocceessss.. TThhee ppyylloonn CCaammeerraa SSooffttwwaarree SSuuiittee aallssoo ccoonnttaaiinnss aa ppooww--
+eerrffuull SSDDKK tthhaatt ssuuppppoorrttss aannyy ttyyppee ooff aapppplliiccaattiioonn ddeevveell--
+AAnn eeaassyy--ttoo--uussee sseett ooff ttoooollss lleettss yyoouu ccoonnfifigguurree tthhee ooppmmeenntt.. TThhee ppyylloonn ppaacckkaaggee ccoonnttaaiinnss tthhee ffoolllloowwiinngg
+ccaammeerraa’’ss iinntteerrffaaccee.. UUssee tthhee ppyylloonn VViieewweerr ttoo sseett ccaamm-- mmaaiinn mmoodduulleess.. EEaacchh oonnee ccaann bbee iinnddiivviidduuaallllyy sseelleecctteedd//
+eerraa ppaarraammeetteerrss,, ttoo ccaappttuurree aanndd ddiissppllaayy iimmaaggeess,, aanndd ttoo uunnsseelleecctteedd dduurriinngg tthhee iinnssttaallllaattiioonn pprroocceessss,, pprreevveennttiinngg
+eevvaalluuaattee tthhee ccaammeerraa.. tthhee iinnssttaallllaattiioonn ooff uunnnneeeeddeedd mmoodduulleess oonn yyoouurr ssyysstteemm::
+TThhee ppyylloonn UUSSBB33 VViissiioonn DDrriivveerr ffuullllyy ssuuppppoorrttss tthhee UUSSBB33  UUSSBB33 VViissiioonn DDrriivveerr
+VViissiioonn ssttaannddaarrdd.. IItt aalllloowwss BBaasslleerr UUSSBB 33..00 ccaammeerraass ttoo
+ GGiiggEE VViissiioonn FFiilltteerr DDrriivveerr
+uussee tthhee ffuullll ssppeeeedd aanndd bbaannddwwiiddtthh ooff UUSSBB 33..00 ffoorr iimmaaggee
+ GGiiggEE VViissiioonn PPeerrffoorrmmaannccee DDrriivveerr
+ttrraannssmmiissssiioonn wwhhiillee rreedduucciinngg rreessoouurrccee llooaadd aanndd uussiinngg
+ooffff--tthhee--sshheellff hhaarrddwwaarree ccoommppoonneennttss..  IIEEEEEE 11339944 DDrriivveerr
+ BBCCOONN AAddaapptteerr AAPPII
+TThhee ppyylloonn GGiiggEE VViissiioonn DDrriivveerrss qquuiicckkllyy sseeppaarraattee
+iinnccoommiinngg ppaacckkeettss ccaarrrryyiinngg iimmaaggee ddaattaa ffrroomm ootthheerr  MMIIPPII DDrriivveerr PPaacckkaaggee
+ttrraaffifficc oonn tthhee nneettwwoorrkk aanndd mmaakkee tthhee ddaattaa aavvaaiillaabbllee  CCaammeerraa LLiinnkk SSeerriiaall CCoommmmuunniiccaattiioonn DDrriivveerr
+ffoorr uussee bbyy yyoouurr vviissiioonn aapppplliiccaattiioonn wwhhiillee rreeqquuiirriinngg tthhee
+ ppyylloonn VViieewweerr
+lloowweesstt CCPPUU rreessoouurrcceess..
+ SSDDKK ffoorr aallll ccaammeerraass;; CC,, CC++++,, ..NNEETT ((CC##,, VVBB..NNEETT,, ......));;
+TThhee ppyylloonn IIEEEEEE 11339944bb DDrriivveerr ggiivveess yyoouu aacccceessss ttoo aa tthhee ‘‘ppyylloonn ffoorr LLiinnuuxx’’ vveerrssiioonn oonnllyy ssuuppppoorrttss tthhee GGiiggEE
+wweellll--eessttaabblliisshheedd iinntteerrffaaccee tteecchhnnoollooggyy,, aanndd tthhee ppyylloonn aanndd UUSSBB 33..00 iinntteerrffaaccee vviiaa aa CC++++ AAPPII
+CCaammeerraa LLiinnkk CCoonnfifigguurraattiioonn DDrriivveerr ooffffeerrss ccoommffoorrtt--
+aabbllee aacccceessss ttoo aallll ccaammeerraa ppaarraammeetteerrss ooff BBaasslleerr’’ss llaatteesstt TThhee ppyylloonn CCaammeerraa SSooffttwwaarree SSuuiittee ccaann bbee ddoowwnnllooaaddeedd
+CCaammeerraa LLiinnkk ffaammiilliieess aaccee,, aavviiaattoorr,, aanndd rraacceerr.. ffoorr ffrreeee aatt wwwwww..bbaasslleerrwweebb..ccoomm//ppyylloonn.. FFoorr mmoorree iinnffoorr--
+mmaattiioonn oonn tthhee iinnssttaallllaattiioonn pprroocceessss,, rreeffeerr ttoo tthhee ppyylloonn
+TThhee BBCCOONN AAddaapptteerr AAPPII aalllloowwss eeaassyy iimmpplleemmeennttaattiioonn IInnssttaallllaattiioonn GGuuiiddee.. TThhee hheellppffuull ppyylloonn RReelleeaassee NNootteess ccoonn--
+ooff aann aaddaapptteerr ttoo ccoommmmuunniiccaattee wwiitthh tthhee ssyysstteemmss II²²CC ttaaiinn aallll iimmpprroovveemmeennttss aanndd bbuugg fifixxeess ssiinnccee tthhee fifirrsstt ppyylloonn
+iinntteerrffaaccee.. AA rreeaaddyy ttoo uussee ssaammppllee aaddaapptteerr iimmpplleemmeennttaa-- vveerrssiioonn..
+ttiioonn iiss aallssoo pprroovviiddeedd..
+19
+
+--- Page 20 ---
+OOTTHHEERR IINNFFOORRMMAATTIIOONN
+How Does Basler Measure promise because we have unparalleled confidence
+and Define Image Quality? in our products. We continually reinvest in research,
+develop ment and superior manufacturing capabilities
+Basler is leading the effort to standardize image so that our customers can fully rely on the pro ducts
+quality and sensitivity measurement for cameras we manufacture.
+and sensors. We are giving the EMVA 1288 stan-
+dard our strongest support because it describes a
+unified method to measure, compute, and present About Basler
+the specification parameters for cameras and image
+sensors. Our cameras are characterized and measured Basler is a leading manufacturer of high-quality cam-
+in 100% compliance with the EMVA 1288 standard. eras and camera accessories for industry, medicine,
+Measurement reports can be downloaded from traffic and a variety of other markets. The compa-
+our website. ny's product portfolio encompasses area scan and
+line scan cameras in compact housing dimensions,
+camera modules in board level variants for embedded
+How Does Basler Ensure Superior Quality solutions, and 3D cameras. The catalog is rounded off
+and Reliable High Performance? by our user-friendly pylon SDK and a broad spectrum
+of accessories, including several developed specially
+Our approach to quality assurance is rigorous: we for Basler and optimally harmonized for our cameras.
+continually audit all facets of our business to ensure
+powerful performance, increase efficiency and reduce Basler has three decades of experience in computer
+costs for our customers. We are compliant with all vision. The company is home to approximately 600
+major quality standards including ISO 9001, CE, RoHS, employees, at its headquarters in Ahrensburg,
+and more. To ensure consistently high product qual- Germany, and at its subsidiaries and sales offices in
+ity, we employ several quality inspection procedures Europe, Asia, and North America.
+during manufacturing.
+Every Basler camera is subjected to exhaustive
+optical and mechanical tests before leaving the
+factory. We have developed a unique combination
+of optics, hardware, and software tools that can
+quickly and efficiently calibrate a camera and mea-
+sure its performance against a set of standard per-
+formance criteria. Regardless of what technology
+or camera model you choose you can be assured
+of consistent performance.
+3-Year Warranty
+Basler offers a 3-year warranty for their cameras and
+the Basler Lenses 1/2.5". We make this unprecedented
+©Basler AG, No. 35, 10/2018
+ID 2000030025
+Basler AG Basler, Inc. Basler Asia Pte Ltd.
+Germany, Headquarters USA Singapore
+Tel. +49 4102 463 500 Tel. +1 610 280 0171 Tel. +65 6367 1355
+sales.europe@baslerweb.com sales.usa@baslerweb.com sales.asia@baslerweb.com
+Please visit our website to find further Basler offices and representatives close to you:
+www.baslerweb.com/sales
+
