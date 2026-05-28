@@ -12,3 +12,5 @@ __pycache__/
 Layer_2/*.json
 # Layer 3 output files
 Layer_3/normalized_cameras.json
+# Layer 4 output files
+Layer_4/validated_cameras.json
