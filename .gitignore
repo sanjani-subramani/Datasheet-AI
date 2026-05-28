@@ -9,4 +9,4 @@ __pycache__/
 .vscode/
 
 # Layer 2 output files
-Layer_2/extracted_specs.json
+Layer_2/*.json

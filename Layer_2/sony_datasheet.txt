@@ -1,0 +1,9 @@
+Product Name: XCG-CG510
+Manufacturer: Sony
+Resolution: 2448 x 2048 pixels
+Max Capture Speed: 23 fps
+Sensor Pixel Size: 3.45 x 3.45 um
+Optical Format: 2/3 inch
+Interface: GigE Vision
+Output Bit Depth: 8 bit, 10 bit
+Weight: 80 g

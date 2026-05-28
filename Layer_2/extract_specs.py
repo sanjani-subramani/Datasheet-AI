@@ -1,48 +1,63 @@
 import json
+import os
 
-# Open the sample datasheet
-with open("sample_datasheet.txt", "r") as file:
-    lines = file.readlines()
+# Folder where datasheet text files are
+folder = "."
 
-print("Extracting specs...")
-print("-----------------------------")
-
-# List of specs we want to find
+# Specs we want to find
 specs_we_want = [
     "Product Name",
     "Manufacturer",
-    "Sensor",
     "Resolution",
     "Frame Rate",
+    "Max Capture Speed",
     "Pixel Size",
+    "Sensor Pixel Size",
     "Sensor Size",
+    "Optical Format",
     "Interface",
     "Bit Depth",
-    "Weight",
-    "Dimensions"
+    "Output Bit Depth",
+    "Weight"
 ]
 
-# Go through every line and find the specs we want
-extracted = {}
+# Find all .txt files in folder
+txt_files = []
+for file in os.listdir(folder):
+    if file.endswith(".txt"):
+        txt_files.append(file)
 
-for line in lines:
-    for spec in specs_we_want:
-        if spec in line:
-            parts = line.split(":")
-            if len(parts) == 2:
-                key = parts[0].strip()
-                value = parts[1].strip()
-                extracted[key] = value
-
-# Print what we found
-print("Extracted Specifications:")
+print(f"Found {len(txt_files)} datasheet files:")
+for f in txt_files:
+    print(f"  - {f}")
 print("-----------------------------")
-for key, value in extracted.items():
-    print(f"{key}: {value}")
 
-# Save extracted specs to a JSON file
-with open("extracted_specs.json", "w") as json_file:
-    json.dump(extracted, json_file, indent=4)
+# Process each file
+for txt_file in txt_files:
+    print(f"\nExtracting from: {txt_file}")
+    
+    with open(txt_file, "r") as file:
+        lines = file.readlines()
 
-print("-----------------------------")
-print("Specs saved to extracted_specs.json")
+    extracted = {}
+
+    for line in lines:
+        for spec in specs_we_want:
+            if spec in line:
+                parts = line.split(":")
+                if len(parts) == 2:
+                    key = parts[0].strip()
+                    value = parts[1].strip()
+                    extracted[key] = value
+
+    # Save JSON with same name as txt file
+    json_filename = txt_file.replace(".txt", ".json")
+    with open(json_filename, "w") as json_file:
+        json.dump(extracted, json_file, indent=4)
+
+    print(f"Saved to: {json_filename}")
+    for key, value in extracted.items():
+        print(f"  {key}: {value}")
+
+print("\n-----------------------------")
+print("All files processed!")

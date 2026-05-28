@@ -1,0 +1,9 @@
+Product Name: BFS-U3-51S5C
+Manufacturer: FLIR
+Resolution: 2448 x 2048 pixels
+Frame Rate: 75 frames/sec
+Pixel Size: 3.45 x 3.45 um
+Sensor Size: 2/3 inch
+Interface: USB3 Vision
+Bit Depth: 8 bit, 12 bit
+Weight: 72 g
