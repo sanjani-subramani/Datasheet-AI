@@ -16,3 +16,5 @@ Layer_3/normalized_cameras.json
 Layer_4/validated_cameras.json
 # Layer 5 - database config
 Layer_5/db_config.py
+# Layer 6 output
+Layer_6/calculation_results.json
