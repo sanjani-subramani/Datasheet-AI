@@ -20,3 +20,5 @@ Layer_5/db_config.py
 Layer_6/calculation_results.json
 # Layer 7 output
 Layer_7/recommendations.json
+# Layer 8
+Layer_8/chat_history.json
