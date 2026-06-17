@@ -7,9 +7,9 @@ from tkinter import ttk, messagebox
 # LOAD NORMALIZED DATA
 # ============================================
 
-input_file = "../Layer_3/normalized_cameras.json"
+input_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Layer_3", "normalized_cameras.json")
 
-with open(input_file, "r") as f:
+with open(input_file, "r", encoding="utf-8") as f:
     cameras = json.load(f)
 
 # ============================================
@@ -52,8 +52,20 @@ def preprocess_cameras(cameras):
             "auto_approved": {},
             "needs_review": {}
         }
+        confidence_map = camera.get("confidence_scores", {})
         for key, value in camera.items():
-            confidence = get_confidence(key, value)
+            if key == "confidence_scores":
+                continue
+            
+            value_str = str(value).strip() if value is not None else ""
+            if value_str in ("", "None", "N/A"):
+                confidence = "MISSING"
+            elif key in confidence_map:
+                score = confidence_map[key]
+                confidence = "HIGH" if score >= 0.8 else "LOW"
+            else:
+                confidence = get_confidence(key, value)
+
             if confidence == "HIGH":
                 camera_result["auto_approved"][key] = value
             else:
@@ -354,9 +366,9 @@ class ValidationApp:
 
     def save_final(self):
         self.validated_cameras.append(self.collect_current())
-        output_file = "validated_cameras.json"
-        with open(output_file, "w") as f:
-            json.dump(self.validated_cameras, f, indent=4)
+        output_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "validated_cameras.json")
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(self.validated_cameras, f, indent=4, ensure_ascii=False)
         messagebox.showinfo(
             "Saved!",
             f"✅ {len(self.validated_cameras)} cameras validated!\n"

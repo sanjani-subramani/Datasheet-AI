@@ -22,3 +22,8 @@ Layer_6/calculation_results.json
 Layer_7/recommendations.json
 # Layer 8
 Layer_8/chat_history.json
+Layer_8/camera_embeddings.json
+# Layer 9 PDF reports
+Layer_9/*.pdf
+# Environment variables - never share this
+.env

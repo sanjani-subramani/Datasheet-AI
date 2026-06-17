@@ -1,228 +1,157 @@
-import mysql.connector
+"""
+DatasheetAI — Layer 8: Intelligent RAG Chat Assistant
+═════════════════════════════════════════════════════
+Retrieves camera context from the semantic vector store and leverages
+gpt-4o-mini to answer technical industrial camera engineering questions.
+"""
+
+import os
+import sys
 import json
+import logging
+from openai import OpenAI
+from dotenv import load_dotenv
+
+# Configure UTF-8 safe logger
+logger = logging.getLogger("datasheetai.chat")
+if not logger.handlers:
+    import io
+    try:
+        _h = logging.StreamHandler(
+            stream=io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+        )
+    except Exception:
+        _h = logging.StreamHandler()
+    _h.setFormatter(logging.Formatter("%(levelname)s | %(name)s | %(message)s"))
+    logger.addHandler(_h)
+    logger.setLevel(logging.INFO)
+
+# Add project root to sys.path so we can import vector_store correctly
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from Layer_8.vector_store import semantic_search
+
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "..", ".env"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+# ════════════════════════════════════════════
+# CORE RAG CHAT FUNCTION
+# ════════════════════════════════════════════
+
+def chat_with_agent(query, chat_history=None):
+    """
+    Generates a RAG response to the user's query by injecting
+    semantic search results into the model context.
+    
+    Args:
+        query: str, user's search query or question
+        chat_history: list of dict, e.g. [{"role": "user", "content": "..."}, ...]
+    """
+    if chat_history is None:
+        chat_history = []
+
+    # Get top 3 relevant cameras from the vector store
+    hits = []
+    try:
+        hits = semantic_search(query, top_k=3)
+    except Exception as e:
+        logger.warning(f"Vector store query failed: {e}")
+
+    # Build context from semantic search results
+    context_str = ""
+    if hits:
+        context_str = "Here are the most relevant camera models found in our database:\n\n"
+        for i, hit in enumerate(hits, 1):
+            context_str += f"--- MATCH #{i} (Confidence: {hit['similarity']:.1%}) ---\n"
+            context_str += hit["profile"] + "\n\n"
+    else:
+        context_str = "No matching cameras found in the database.\n"
+
+    system_prompt = f"""You are a senior industrial machine vision engineer and AI assistant for the DatasheetAI platform.
+Your task is to answer user queries with precise, structured, and technical information about cameras.
+
+Use the following DATABASE CONTEXT retrieved from our vector index to formulate your answer:
+{context_str}
+
+ENGINEERING INSTRUCTIONS:
+1. Speak in a clear, professional, engineering-focused tone.
+2. If comparing cameras, present comparison points (e.g. resolution, sensor size, frame rate, interfaces) in a structured or table format.
+3. Be strict with specs and units (fps, pixels, um, g, °C, W).
+4. If the database context has no answer, answer using general engineering knowledge but make it clear that the camera is not in our database.
+5. If the user asks about calculations (e.g. conveyor speed, defect sizes), explain the physics principles, list the formulas, and note that they can perform evaluations in the 'Engineering Calculator' workspace.
+"""
+
+    messages = [{"role": "system", "content": system_prompt}]
+
+    # Append recent chat history (keep last 6 turns to manage token limit)
+    for interaction in chat_history[-6:]:
+        messages.append({
+            "role": interaction.get("role", "user"),
+            "content": interaction.get("content", "")
+        })
+
+    # Append user prompt
+    messages.append({"role": "user", "content": query})
+
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages,
+            temperature=0.2,
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"❌ Error communicating with AI: {e}"
+
 
 # ============================================
-# CONNECT TO MYSQL
+# STANDALONE CLI CHAT LOOP
 # ============================================
 
-connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Srisaibaba!1",  # ← replace with your MySQL password
-    database="datasheetai"
-)
+def _safe_print(msg=""):
+    """Print that never crashes on Windows cp1252."""
+    try:
+        print(msg)
+    except UnicodeEncodeError:
+        print(msg.encode("ascii", errors="replace").decode())
 
-cursor = connection.cursor(dictionary=True)
 
-# ============================================
-# LOAD ALL CAMERAS INTO MEMORY
-# ============================================
+def run_chat_cli():
+    """Run RAG chat assistant in CLI mode."""
+    _safe_print("=" * 55)
+    _safe_print("  DatasheetAI -- Intelligent RAG Assistant")
+    _safe_print("  Type 'quit' or 'exit' to exit.")
+    _safe_print("=" * 55)
 
-cursor.execute("SELECT * FROM cameras")
-all_cameras = cursor.fetchall()
-
-print("=" * 50)
-print("  DatasheetAI — Camera Assistant")
-print("=" * 50)
-print(f"  {len(all_cameras)} cameras loaded in database")
-print("  Type 'quit' to exit")
-print("  Type 'help' to see example questions")
-print("=" * 50)
-
-# ============================================
-# HELPER FUNCTIONS
-# ============================================
-
-def get_all_cameras():
-    return all_cameras
-
-def search_by_manufacturer(name):
-    return [c for c in all_cameras
-            if name.lower() in c["manufacturer"].lower()]
-
-def search_by_interface(interface):
-    return [c for c in all_cameras
-            if interface.lower() in c["interface"].lower()]
-
-def filter_by_fps(min_fps):
-    results = []
-    for c in all_cameras:
+    history = []
+    
+    while True:
         try:
-            fps = float(c["frame_rate"].split()[0])
-            if fps >= min_fps:
-                results.append(c)
-        except:
-            pass
-    return results
+            print()
+            user_input = input("You: ").strip()
+            
+            if user_input.lower() in ["quit", "exit"]:
+                _safe_print("Goodbye!")
+                break
+                
+            if not user_input:
+                continue
 
-def find_fastest():
-    fastest = None
-    max_fps = 0
-    for c in all_cameras:
-        try:
-            fps = float(c["frame_rate"].split()[0])
-            if fps > max_fps:
-                max_fps = fps
-                fastest = c
-        except:
-            pass
-    return fastest
+            response = chat_with_agent(user_input, history)
+            
+            # Print response
+            _safe_print(f"\nAI: {response}")
+            
+            # Append history
+            history.append({"role": "user", "content": user_input})
+            history.append({"role": "assistant", "content": response})
+            
+        except KeyboardInterrupt:
+            _safe_print("\nGoodbye!")
+            break
+        except Exception as e:
+            _safe_print(f"\nError: {e}")
 
-def find_lightest():
-    lightest = None
-    min_weight = float("inf")
-    for c in all_cameras:
-        try:
-            weight = float(c["weight"].replace("g", "").strip())
-            if weight < min_weight:
-                min_weight = weight
-                lightest = c
-        except:
-            pass
-    return lightest
 
-def find_highest_resolution():
-    best = None
-    max_pixels = 0
-    for c in all_cameras:
-        try:
-            pixels = int(c["resolution"].split("x")[0].strip().split()[0])
-            if pixels > max_pixels:
-                max_pixels = pixels
-                best = c
-        except:
-            pass
-    return best
-
-def format_camera(c):
-    return (f"  📷 {c['product_name']} ({c['manufacturer']})\n"
-            f"     Frame Rate:  {c['frame_rate']}\n"
-            f"     Resolution:  {c['resolution']}\n"
-            f"     Interface:   {c['interface']}\n"
-            f"     Pixel Size:  {c['pixel_size']}\n"
-            f"     Weight:      {c['weight']}")
-
-# ============================================
-# QUERY UNDERSTANDING
-# ============================================
-
-def understand_query(query):
-    query = query.lower().strip()
-
-    # Help
-    if query == "help":
-        return """
-Example questions you can ask:
-  - list all cameras
-  - show basler cameras
-  - show flir cameras
-  - show sony cameras
-  - which cameras have frame rate above 60
-  - which cameras have frame rate above 30
-  - which camera is fastest
-  - which camera is lightest
-  - which camera has highest resolution
-  - which cameras use usb
-  - which cameras use gige
-  - how many cameras are in the database
-        """
-
-    # List all
-    if any(word in query for word in ["list all", "show all", "all cameras"]):
-        cameras = get_all_cameras()
-        response = f"Found {len(cameras)} cameras:\n\n"
-        for c in cameras:
-            response += format_camera(c) + "\n\n"
-        return response
-
-    # Count
-    if any(word in query for word in ["how many", "count"]):
-        return f"There are {len(all_cameras)} cameras in the database."
-
-    # Fastest
-    if any(word in query for word in ["fastest", "highest fps", "most fps"]):
-        c = find_fastest()
-        if c:
-            return f"The fastest camera is:\n\n{format_camera(c)}"
-
-    # Lightest
-    if "lightest" in query or "least weight" in query:
-        c = find_lightest()
-        if c:
-            return f"The lightest camera is:\n\n{format_camera(c)}"
-
-    # Highest resolution
-    if any(word in query for word in ["highest resolution", "best resolution", "most pixels"]):
-        c = find_highest_resolution()
-        if c:
-            return f"The highest resolution camera is:\n\n{format_camera(c)}"
-
-    # Filter by FPS
-    if "frame rate above" in query or "fps above" in query or "frame rate over" in query:
-        for word in query.split():
-            try:
-                min_fps = float(word)
-                cameras = filter_by_fps(min_fps)
-                if cameras:
-                    response = f"Found {len(cameras)} cameras with frame rate above {min_fps} fps:\n\n"
-                    for c in cameras:
-                        response += format_camera(c) + "\n\n"
-                    return response
-                else:
-                    return f"No cameras found with frame rate above {min_fps} fps."
-            except:
-                pass
-
-    # Search by manufacturer
-    for brand in ["basler", "flir", "sony"]:
-        if brand in query:
-            cameras = search_by_manufacturer(brand)
-            if cameras:
-                response = f"Found {len(cameras)} {brand.upper()} camera(s):\n\n"
-                for c in cameras:
-                    response += format_camera(c) + "\n\n"
-                return response
-            else:
-                return f"No {brand.upper()} cameras found in database."
-
-    # Search by interface
-    if "usb" in query:
-        cameras = search_by_interface("usb")
-        if cameras:
-            response = f"Found {len(cameras)} cameras with USB interface:\n\n"
-            for c in cameras:
-                response += format_camera(c) + "\n\n"
-            return response
-
-    if "gige" in query or "gigabit" in query:
-        cameras = search_by_interface("gige")
-        if cameras:
-            response = f"Found {len(cameras)} cameras with GigE interface:\n\n"
-            for c in cameras:
-                response += format_camera(c) + "\n\n"
-            return response
-
-    # Default
-    return ("I didn't understand that question.\n"
-            "Type 'help' to see example questions.")
-
-# ============================================
-# CHAT LOOP
-# ============================================
-
-while True:
-    print()
-    user_input = input("You: ").strip()
-
-    if user_input.lower() == "quit":
-        print("Goodbye! 👋")
-        break
-
-    if not user_input:
-        continue
-
-    response = understand_query(user_input)
-    print(f"\nAI: {response}")
-
-cursor.close()
-connection.close()
+if __name__ == "__main__":
+    run_chat_cli()
